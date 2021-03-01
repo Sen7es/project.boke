@@ -168,6 +168,13 @@ localhost:4000
 npm install hexo -g #安装Hexo
 npm update hexo -g #升级
 hexo init #初始化博客
+hexo new "postName" #新建文章
+hexo new page "pageName" #新建页面
+hexo generate #生成静态页面至public目录
+hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）
+hexo deploy #将.deploy目录部署到GitHub
+hexo help  # 查看帮助
+hexo version  #查看Hexo的版本
 
 命令简写
 hexo n "我的博客" == hexo new "我的博客" #新建文章
@@ -180,6 +187,8 @@ hexo server -s #静态模式
 hexo server -p 5000 #更改端口
 hexo server -i 192.168.1.1 #自定义 IP
 hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令
+
+
 
 刚刚的三个命令依次是新建一篇博客文章、生成网页、在本地预览的操作。
 
