@@ -16,7 +16,7 @@ categories:
 
 ### 什么是Hexo
 
-![hexo-logo](../images/hexoCreate/hexo-logo.png)
+![hexo-logo](https://sen7es.github.io/images/hexoCreate/hexo-logo.png)
 
 
 
@@ -62,7 +62,7 @@ Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，
 
 登录到GitHub,如果没有GitHub帐号，使用你的邮箱注册GitHub帐号：[Build software better, together](https://link.zhihu.com/?target=https%3A//github.com/) 点击GitHub中的New repository创建新仓库，仓库名应该为：**用户名**.[http://github.io](https://link.zhihu.com/?target=http%3A//github.io) 这个**用户名**使用你的GitHub帐号名称代替，这是固定写法，比如我的仓库名为：
 
-![](../images/hexoCreate/v2-832168e58b4ac4ce7c3cca797711d2d3_720w.jpg)
+![](https://sen7es.github.io/images/hexoCreate/v2-832168e58b4ac4ce7c3cca797711d2d3_720w.jpg)
 
 
 
@@ -70,7 +70,7 @@ Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，
 
 什么是Git ?简单来说Git是开源的分布式版本控制系统，用于敏捷高效地处理项目。我们网站在本地搭建好了，需要使用Git同步到GitHub上。如果想要了解Git的细节，参看[廖雪峰](https://link.zhihu.com/?target=http%3A//weibo.com/liaoxuefeng)老师的Git教程：[Git教程](https://link.zhihu.com/?target=http%3A//www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000) 从Git官网下载：[Git - Downloading Package](https://link.zhihu.com/?target=https%3A//git-scm.com/download/win) 现在的机子基本都是64位的，选择64位的安装包，下载后安装，在命令行里输入git测试是否安装成功，若安装失败，参看其他详细的Git安装教程。安装成功后，将你的Git与GitHub帐号绑定，鼠标右击打开Git Bash
 
-![](../images/hexoCreate/v2-8b1cbe253d6e0301bd9a68c6f98a9f52_720w.jpg)
+![](https://sen7es.github.io/images/hexoCreate/v2-8b1cbe253d6e0301bd9a68c6f98a9f52_720w.jpg)
 
 
 
@@ -90,30 +90,30 @@ ssh-keygen -t rsa -C "你的GitHub注册邮箱"
 然后直接三个回车即可，默认不需要设置密码
 然后找到生成的.ssh的文件夹中的id_rsa.pub密钥，将内容全部复制  
 
-![](../images/hexoCreate/v2-d1e47103ec1aa8675f68688c5d63bd27_720w.jpg)
+![](https://sen7es.github.io/images/hexoCreate/v2-d1e47103ec1aa8675f68688c5d63bd27_720w.jpg)
 
 
 
 打开[GitHub_Settings_keys](https://link.zhihu.com/?target=https%3A//github.com/settings/keys) 页面，新建new SSH Key 
 
-![](../images/hexoCreate/v2-72a3f22c080e99343c3cc4aabce10e3c_720w.jpg)
+![](https://sen7es.github.io/images/hexoCreate/v2-72a3f22c080e99343c3cc4aabce10e3c_720w.jpg)
 
 Title为标题，任意填即可，将刚刚复制的id_rsa.pub内容粘贴进去，最后点击Add SSH key。
 在Git Bash中检测GitHub公钥设置是否成功，输入 ssh git@github.com ：  
 
-![](../images/hexoCreate/v2-da481ffa686410becd4186c656b4ebd6_720w.jpg)
+![](https://sen7es.github.io/images/hexoCreate/v2-da481ffa686410becd4186c656b4ebd6_720w.jpg)
 
 
 
 如上则说明成功。这里之所以设置GitHub密钥原因是，通过非对称加密的公钥与私钥来完成加密，公钥放置在GitHub上，私钥放置在自己的电脑里。GitHub要求每次推送代码都是合法用户，所以每次推送都需要输入账号密码验证推送用户是否是合法用户，为了省去每次输入密码的步骤，采用了ssh，当你推送的时候，git就会匹配你的私钥跟GitHub上面的公钥是否是配对的，若是匹配就认为你是合法用户，则允许推送。这样可以保证每次的推送都是正确合法的。
 
-![](../images/hexoCreate/v2-76ea38e9545e606f975781e47933b010_720w.jpg)
+![](https://sen7es.github.io/images/hexoCreate/v2-76ea38e9545e606f975781e47933b010_720w.jpg)
 
 
 
 检测npm是否安装成功，在命令行中输入npm -v :
 
-![](../images/hexoCreate/v2-bede250b8456df92475b455fda8c1dd9_720w.jpg)
+![](https://sen7es.github.io/images/hexoCreate/v2-bede250b8456df92475b455fda8c1dd9_720w.jpg)
 
 
 
@@ -123,7 +123,7 @@ Title为标题，任意填即可，将刚刚复制的id_rsa.pub内容粘贴进�
 
 Hexo就是我们的个人博客网站的框架， 这里需要自己在电脑常里创建一个文件夹，可以命名为Blog，Hexo框架与以后你自己发布的网页都在这个文件夹中。创建好后，进入文件夹中，按住shift键，右击鼠标点击命令行
 
-![](../images/hexoCreate/v2-a5450a466c0927c25dff8ad6f1d2046c_720w.jpg)
+![](https://sen7es.github.io/images/hexoCreate/v2-a5450a466c0927c25dff8ad6f1d2046c_720w.jpg)
 
 
 
@@ -159,7 +159,7 @@ localhost:4000
 
 可以看出我们写出第一篇博客，只不过我下图是我修改过的配置，和你的显示不一样。 
 
-![](../images/hexoCreate/v2-123e73c0630d299b1c856d99b04b55bb_720w.jpg)
+![](https://sen7es.github.io//images/hexoCreate/v2-123e73c0630d299b1c856d99b04b55bb_720w.jpg)
 
 
 
@@ -187,11 +187,11 @@ hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令
 
 上面只是在本地预览，接下来要做的就是就是推送网站，也就是发布网站，让我们的网站可以被更多的人访问。在设置之前，需要解释一个概念，在blog根目录里的_config.yml文件称为**站点**配置文件，如下图 
 
-![](../images/hexoCreate/v2-cb1fd5e5a2e73f513234e434724c7c55_720w.jpg)
+![](https://sen7es.github.io/images/hexoCreate/v2-cb1fd5e5a2e73f513234e434724c7c55_720w.jpg)
 
 进入根目录里的themes文件夹，里面也有个_config.yml文件，这个称为**主题**配置文件，如下图  
 
-![](../images/hexoCreate/v2-4252029e5634bf91c7d58916ae2b8ac3_720w.jpg)
+![](https://sen7es.github.io/images/hexoCreate/v2-4252029e5634bf91c7d58916ae2b8ac3_720w.jpg)
 
 
 
@@ -202,7 +202,7 @@ type: git
 repo: 这里填入你之前在GitHub上创建仓库的完整路径，记得加上 .git
 branch: master参考如下：  
 
-![](../images/hexoCreate/v2-279ac5149b577f04dc099defbb12eaa8_720w.jpg)
+![](https://sen7es.github.io/images/hexoCreate/v2-279ac5149b577f04dc099defbb12eaa8_720w.jpg)
 
 
 
@@ -230,7 +230,7 @@ hexo d
 
 
 
-![img](https://pic1.zhimg.com/80/v2-d750452f4258bf0967d5629ef23d1b10_720w.jpg)
+![img](https://sen7es.github.io/images/hexoCreate/v2-d750452f4258bf0967d5629ef23d1b10_720w.jpg)
 
 你就会发现你的博客已经上线了，可以在网络上被访问了。
 
