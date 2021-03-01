@@ -1,5 +1,5 @@
 ---
-title: 关于Vue的一些小笔记（三）计算、监听、样式绑定
+title: 关于Vue的一些小笔记：计算、监听、样式绑定
 tags:
   - Vue
   - computed
@@ -54,8 +54,6 @@ var vm = new Vue({
 Original message: "Hello"
 
 Computed reversed message: "olleH"
-
-<!-- <span style="color:red">`reversedMessage`</span>。 -->
 
 这里我们声明了一个计算属性 <span style="color:red"> `reversedMessage` </span>。 我们提供的函数将用作 property <font color="#dd0000"> `vm.reversedMessage`</font> 的 getter 函数：
 
